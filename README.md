@@ -1,5 +1,17 @@
 ### Hi there 👋
-
+```javascript
+const bio = {
+  name: "Reza Gholizadeh",
+  title: "Frontend Developer",
+  yearsOfExperience: 2,
+  currentEmployer: "Snappfood"
+};
+const greet = () => {
+  const currentTime = new Date().getHours();
+  const greeting = currentTime < 12 ? "Good morning" : currentTime < 18 ? "Good afternoon" : "Good evening";
+  return `${greeting}, I'm ${bio.name}, a ${bio.yearsOfExperience}-year ${bio.title} at ${bio.currentEmployer}`;
+};
+console.log("welcome", greet());
 <!--
 **Reza-Gholizadeh/Reza-Gholizadeh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
